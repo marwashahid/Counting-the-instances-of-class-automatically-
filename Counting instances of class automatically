@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class CountClass
+{
+private:
+	static int count;
+public:
+	CountClass()
+	{
+
+		count++;
+	}
+	void displayCount()
+	{
+		cout << count;
+	}
+
+};
+int CountClass::count = 0;
+int main()
+{
+	CountClass obj, obj1, ibj2, obj3, obj4;
+	CountClass call;
+	call.displayCount();
+
+
+	system("pause");
+	return 0;
+}
